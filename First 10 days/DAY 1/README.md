@@ -86,7 +86,13 @@ int gcd(int a, int b) {
 - 📹 Tutorial: [Take U Forward](https://takeuforward.org/data-structure/sum-of-first-n-natural-numbers/)
 
 ```cpp
-// Add your solution here when ready
+void solve(int N) {
+    int sum = N * (N + 1) / 2;
+    cout<<"The sum of the first "<<N<<" numbers is: "<<sum<<endl;
+  }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
 ```
 
 ---
