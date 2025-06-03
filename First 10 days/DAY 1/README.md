@@ -129,5 +129,21 @@ void solve(int N) {
 - 📹 Tutorial: [Take U Forward](https://takeuforward.org/data-structure/find-the-majority-element-that-occurs-more-than-n-2-times/)
 
 ```cpp
-// Add your Majority Element solution here when ready
+    int majorityElement(vector<int>& nums) {
+        int ele = nums[0];
+        int count = 1;
+        for(int i=1;i<nums.size();i++){
+            if(nums[i]==ele){
+                count++;
+            }
+            else{
+                count--;
+            }
+            if(count==0){
+                ele = nums[i];
+                count = 1;
+            }
+        }
+        return ele;
+    }
 ```
